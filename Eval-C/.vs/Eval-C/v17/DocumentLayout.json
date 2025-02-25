@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\c.serpoix\\source\\repos\\Eval-C\\",
+  "WorkspaceRootPath": "C:\\UnityProjects\\!Eval-en-C\\Eval-C\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B16DAEE9-2400-4A93-A858-0E8FFC0AAAE3}|Eval-C\\Eval-C.vcxproj|C:\\Users\\c.serpoix\\source\\repos\\Eval-C\\Eval-C\\Eval-C.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{B16DAEE9-2400-4A93-A858-0E8FFC0AAAE3}|Eval-C\\Eval-C.vcxproj|C:\\UnityProjects\\!Eval-en-C\\Eval-C\\Eval-C\\Eval-C.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B16DAEE9-2400-4A93-A858-0E8FFC0AAAE3}|Eval-C\\Eval-C.vcxproj|solutionrelative:Eval-C\\Eval-C.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Eval-C.cpp",
-              "DocumentMoniker": "C:\\Users\\c.serpoix\\source\\repos\\Eval-C\\Eval-C\\Eval-C.cpp",
+              "DocumentMoniker": "C:\\UnityProjects\\!Eval-en-C\\Eval-C\\Eval-C\\Eval-C.cpp",
               "RelativeDocumentMoniker": "Eval-C\\Eval-C.cpp",
-              "ToolTip": "C:\\Users\\c.serpoix\\source\\repos\\Eval-C\\Eval-C\\Eval-C.cpp",
+              "ToolTip": "C:\\UnityProjects\\!Eval-en-C\\Eval-C\\Eval-C\\Eval-C.cpp",
               "RelativeToolTip": "Eval-C\\Eval-C.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwC0AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-25T06:07:20.522Z",
               "EditorCaption": ""

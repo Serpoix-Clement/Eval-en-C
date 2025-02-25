@@ -9,7 +9,7 @@ const char PLAYER = '@';
 const char TREASURE = 'T';
 const char OBSTACLE = '#';
 const char EMPTY = '.';
-bool WIN = false; //variable booléenne qui représente si le joueur a gagné
+bool win = false; //variable booléenne qui représente si le joueur a gagné
 
 //déclaration des fonctions
 
@@ -23,27 +23,27 @@ void movePlayer(int grid[GRID_SIZE][GRID_SIZE], int* playerX, int* playerY, int 
 int main()
 {
     int grid[GRID_SIZE][GRID_SIZE]; //déclaration de la grille de jeu
-    int direction = 0; //déclaration de la direction qui sera utilisé pour stocker l'entier donné par le joueur
-    int playerX = 0; //déclaration du x du joueur
-    int playerY = 0; //déclaration du y du joueur
-    int* pointeurPlayerX = &playerX; //déclaration du pointeur du x du joueur
-    int* pointeurPlayerY = &playerY; //déclaration du pointeur du y du joueur
+    int iDirection = 0; //déclaration de la direction qui sera utilisé pour stocker l'entier donné par le joueur
+    int iPlayerX = 0; //déclaration du x du joueur
+    int iPlayerY = 0; //déclaration du y du joueur
+    int* iPointeurPlayerX = &iPlayerX; //déclaration du pointeur du x du joueur
+    int* iPointeurPlayerY = &iPlayerY; //déclaration du pointeur du y du joueur
     int iCompteurDeplacement = 0;
 
-    initGrid(grid, pointeurPlayerX, pointeurPlayerY); //appel de la fonction pour initialiser la grille
-    while (!WIN) //tant que le joueur n'a pas gagné (boucle de jeu)
+    initGrid(grid, iPointeurPlayerX, iPointeurPlayerY); //appel de la fonction pour initialiser la grille
+    while (!win) //tant que le joueur n'a pas gagné (boucle de jeu)
     {
             displayGrid(grid); //appel de la fonction pour afficher la grille
 
             printf("Deplacement(1:haut, 2:bas, 3:gauche, 4:droite) : "); //on affiche les instructions de déplacements
-            scanf_s("%d", &direction); //on demande la direction au joueur
-            while (direction < 1 || direction > 4) //si la direction n'est pas valable on continue jusqu'à qu'elle le soit
+            scanf_s("%d", &iDirection); //on demande la direction au joueur
+            while (iDirection < 1 || iDirection > 4) //si la direction n'est pas valable on continue jusqu'à qu'elle le soit
             {
                 printf("Deplacement(1:haut, 2:bas, 3:gauche, 4:droite) : "); //on affiche les instructions de déplacements
-                scanf_s("%d", &direction); //on demande la direction au joueur
+                scanf_s("%d", &iDirection); //on demande la direction au joueur
             }
 
-            movePlayer(grid, pointeurPlayerX, pointeurPlayerY, direction); //appel de la fonction pour déplacer le joueur avec la direction souhaitée
+            movePlayer(grid, iPointeurPlayerX, iPointeurPlayerY, iDirection); //appel de la fonction pour déplacer le joueur avec la direction souhaitée
             iCompteurDeplacement++;
     }
     printf("Vous avez gagne avec %d deplacement", iCompteurDeplacement); //on affiche au joueur qu'il a gagné avec quel score
@@ -178,7 +178,7 @@ void movePlayer(int grid[GRID_SIZE][GRID_SIZE], int* playerX, int* playerY, int 
 
     if (grid[newX][newY] == TREASURE) //si la prochaine coordonnée est le trésor
     {
-        WIN = true; //on active la victoire
+        win = true; //on active la victoire
     }
 
     //on met les nouvelles coordonnées dans celles actuelles
